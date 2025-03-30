@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITFAM | Formulario de Noticias</title>
+    <link rel="stylesheet" href="/css/Form-Cart-Noticias-Style.css">
+</head>
+<body>
+    <form action="" method="POST" id="myForm">
+        <!-- Titulo del formulario -->
+         <h2>Formulario de noticias</h2>
+        <div class="form-container">
+            <!-- Botón para seleccionar miniatura -->
+            <div class="form-input">
+                <label for="miniatura"><span>Previsualización</span>
+                    <input required type="file" name="miniatura" id="miniatura" accept="image/*">
+                </label>
+                <!-- Contenedor para la vista previa de la miniatura -->
+                <div id="miniatura-preview-container" class="image-preview-container">
+                    <img id="miniatura-preview" src="" alt="Vista previa de la miniatura">
+                </div>
+                <p id="miniatura-error-message" class="error-message">Por favor, selecciona un archivo de imagen válido para la Previsualización.</p>
+            </div>
+            
+            <!-- Título -->
+            <div class="form-input">
+                <label for="titulo"><span>Título</span>
+                    <input required type="text" name="titulo" id="titulo">
+                </label>
+            </div>
+
+            <!-- Botón para seleccionar archivo del contenido -->
+            <div class="form-input">
+                <label for="imagen"><span style="text-transform: initial;">Cargar archivos <span class="opcion-archivos">(Opcional)</span></span>
+                    <input required type="file" name="imagen" id="imagen" accept="image/*,video/*,audio/*">
+                </label>
+                <!-- Contenedor para la vista previa del archivo del contenido -->
+                <div id="imagen-preview-container" class="image-preview-container">
+                    <img id="imagen-preview" src="" alt="Vista previa del contenido">
+                </div>
+                <p id="imagen-error-message" class="error-message">Por favor, selecciona un archivo de imagen, video o audio válido.</p>
+            </div>
+
+            <!-- Contenido -->
+            <div class="form-input">
+                <label for="contenido"><span>Contenido</span>
+                    <textarea name="contenido" id="contenido" required></textarea>
+                </label>
+            </div>
+
+            <!-- ¿A quien va dirigido? -->
+
+            <div class="form-input">
+                <label for="">
+                    <span style="text-transform: initial;">¿A quién va dirigido?</span>
+                    <select name="" id="">
+                        <option value="">Todos</option>
+                        <option value="">Estudiantes</option>
+                        <option value="">Padres</option>
+                        <option value="">Maestros</option>
+                    </select>
+                </label>
+            </div>
+
+            <!-- Publicar -->
+            <div class="form-input">
+                <input type="submit" value="Publicar">
+            </div>
+        </div>
+    </form>    
+    
+    <script src="/js/form-cart-noticias-script.js"></script>
+</body>
+</html>

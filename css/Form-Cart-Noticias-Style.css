@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+form {
+    background: #fff; /* Fondo blanco */
+    max-width: 500px;
+    margin: auto;
+    color: #333; /* Texto oscuro para mejor contraste */
+    padding: 25px;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+span{
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select, textarea, input[type="file"] {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+}
+
+input[type="file"]{
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    font-family: sans-serif;
+}
+
+span {
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background: #45a049;
+    color: #fff;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Contenedor de vista previa de la imagen */
+.image-preview-container {
+    margin-top: 10px;
+    display: none; /* Ocultar por defecto */
+    justify-content: center;
+}
+
+#miniatura-preview, #imagen-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.opcion-archivos{
+    color: #919090;
+    font-size: 15px;
+}
+
+select{
+    cursor: pointer;
+}
